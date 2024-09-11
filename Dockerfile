@@ -2,7 +2,8 @@ FROM ubuntu:devel
 
 RUN apt update && \
     apt full-upgrade --yes && \
-    apt install --yes x11-apps
+    apt install --yes x11-apps && \
+    apt clean distclean autoclean autoremove
 
 CMD echo Usage: && \
     echo 'xhost +local:docker' && \
