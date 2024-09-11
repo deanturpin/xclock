@@ -1,6 +1,6 @@
 # x11 container example
 
-Example of running a GUI application in a container and displayed it on the host.
+Example of running a GUI application in a container and displaying it on the host.
 
 ```bash
 xhost +local:docker
