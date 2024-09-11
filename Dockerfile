@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:devel
 
 RUN apt update && \
     apt full-upgrade --yes && \
