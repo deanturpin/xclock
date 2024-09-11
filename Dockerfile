@@ -6,5 +6,5 @@ RUN apt update && \
 
 CMD echo Usage: && \
     echo 'xhost +local:docker' && \
-    echo 'docker run -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm deanturpin/xclock deanturpin/xclock' && \
+    echo 'docker run -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm -it deanturpin/xclock' && \
     xclock
