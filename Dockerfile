@@ -5,6 +5,6 @@ RUN apt update && \
     apt install --yes x11-apps
 
 CMD echo Usage: && \
-    echo xhost +local:docker && \
+    echo 'xhost +local:docker' && \
     echo 'docker run -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm deanturpin/xclock deanturpin/xclock' && \
     xclock
